@@ -1,4 +1,4 @@
-package extlist;
+package chapter03.c3_1_3.wait_notify_size5.extlist;
 
 import java.util.ArrayList;
 import java.util.List;
