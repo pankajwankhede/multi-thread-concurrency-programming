@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>multi-thread-demo</module>
+        <module>java-multi-thread-programming-source</module>
     </modules>
     <name>multi-thread-concurrency-programming Maven Webapp</name>
     <url>http://maven.apache.org</url>
