@@ -1,6 +1,6 @@
-package extthread;
+package chapter04.c4_1_4.extthread;
 
-import service.MyService;
+import chapter04.c4_1_4.service.MyService;
 
 public class ThreadA extends Thread {
 
