@@ -1,13 +1,11 @@
-package extthread;
-
-import service.MyService;
+package chapter04.c4_1_1;
 
 public class MyThread extends Thread {
 
 	private MyService service;
 
-	public MyThread(MyService service) {
-		super();
+	MyThread(MyService service) {
+        super();
 		this.service = service;
 	}
 
