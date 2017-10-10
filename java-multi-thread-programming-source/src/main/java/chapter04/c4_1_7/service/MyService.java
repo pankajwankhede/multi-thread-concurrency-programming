@@ -1,4 +1,4 @@
-package service;
+package chapter04.c4_1_7.service;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
@@ -15,7 +15,7 @@ public class MyService {
 			while (hasValue == true) {
 				condition.await();
 			}
-			System.out.println("¥Ú”°°Ô");
+			System.out.println("ÊâìÂç∞*");
 			hasValue = true;
 			condition.signal();
 		} catch (InterruptedException e) {
@@ -31,7 +31,7 @@ public class MyService {
 			while (hasValue == false) {
 				condition.await();
 			}
-			System.out.println("¥Ú”°°Ó");
+			System.out.println("ÊâìÂç∞-");
 			hasValue = false;
 			condition.signal();
 		} catch (InterruptedException e) {
