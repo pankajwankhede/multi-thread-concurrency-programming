@@ -4,18 +4,18 @@ import chapter04.c4_1.c4_1_7.service.MyService;
 
 public class MyThreadA extends Thread {
 
-	private MyService myService;
+    private MyService myService;
 
-	public MyThreadA(MyService myService) {
-		super();
-		this.myService = myService;
-	}
+    public MyThreadA(MyService myService) {
+        super();
+        this.myService = myService;
+    }
 
-	@Override
-	public void run() {
-		for (int i = 0; i < Integer.MAX_VALUE; i++) {
-			myService.set();
-		}
-	}
+    @Override
+    public void run() {
+        for (int i = 0; i < Integer.MAX_VALUE; i++) {
+            myService.set();
+        }
+    }
 
 }
