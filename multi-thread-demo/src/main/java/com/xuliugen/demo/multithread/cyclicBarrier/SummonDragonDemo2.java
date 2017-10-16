@@ -15,11 +15,7 @@ public class SummonDragonDemo2 {
 
             @Override
             public void run() {
-                if (flag) {
-                    System.out.println("7个法师召集完毕，同时出发，去往不同地方寻找龙珠！");
-                }else {
-                    System.out.println("集齐七颗龙珠！召唤神龙！");
-                }
+                System.out.println("到达障碍点！");
             }
         });
 
@@ -31,8 +27,9 @@ public class SummonDragonDemo2 {
             }
         });
 
-        callMaster(callMasterBarrier);//召集齐7位法师
-        collectDragonBall(summonDragonBarrier);//收集龙珠
+        callMaster(callMasterBarrier); //召集齐7位法师
+        callMasterBarrier.reset();
+        collectDragonBall(callMasterBarrier);//收集龙珠
     }
 
     private static void callMaster(CyclicBarrier cyclicBarrier) {
