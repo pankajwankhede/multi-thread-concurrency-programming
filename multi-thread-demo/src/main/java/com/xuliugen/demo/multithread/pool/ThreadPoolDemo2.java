@@ -1,6 +1,9 @@
 package com.xuliugen.demo.multithread.pool;
 
-import java.util.concurrent.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 public class ThreadPoolDemo2 {
 
@@ -40,6 +43,9 @@ public class ThreadPoolDemo2 {
 
         for (int i = 0; i < 10; i++) {
             int index = i;
+            /*
+             *如果直接使用 submit进行提交的话，如果县城中运行的有错误的话，就不会显示出来堆栈信息
+             */
             executorService.submit(() -> System.out.println("i:" + index));
         }
 
