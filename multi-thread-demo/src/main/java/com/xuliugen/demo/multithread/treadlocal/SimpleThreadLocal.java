@@ -1,4 +1,4 @@
-package com.xuliugen.demo.multithread.volatiledemo;
+package com.xuliugen.demo.multithread.treadlocal;
 
 import java.util.*;
 
