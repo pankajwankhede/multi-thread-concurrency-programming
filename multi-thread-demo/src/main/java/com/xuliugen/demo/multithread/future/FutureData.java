@@ -17,15 +17,16 @@ public class FutureData implements Data {
 
     @Override
     public String getResult() {
-        lock.lock();
         while (!isReady) {
             try {
+                lock.lock();
                 condition.await();
             } catch (InterruptedException e) {
                 e.printStackTrace();
+            } finally {
+                lock.unlock();
             }
         }
-        lock.unlock();
         return realData.getResult();
     }
 
