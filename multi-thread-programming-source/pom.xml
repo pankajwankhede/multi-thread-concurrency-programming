@@ -6,9 +6,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>java-multi-thread-programming-source</artifactId>
+    <artifactId>multi-thread-programming-source</artifactId>
     <packaging>war</packaging>
-    <name>java-multi-thread-programming-source Maven Webapp</name>
+    <name>multi-thread-programming-source Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
@@ -19,7 +19,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>java-multi-thread-programming-source</finalName>
+        <finalName>multi-thread-programming-source</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

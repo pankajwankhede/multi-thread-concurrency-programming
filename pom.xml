@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>multi-thread-demo</module>
-        <module>java-multi-thread-programming-source</module>
+        <module>multi-thread-programming-source</module>
         <module>atomic-demo</module>
     </modules>
     <name>multi-thread-concurrency-programming Maven Webapp</name>
